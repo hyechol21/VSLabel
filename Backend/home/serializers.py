@@ -4,4 +4,6 @@ from .models import UploadFile
 class UploadFileSerializer(serializers.ModelSerializer):
     class Meta:
         model = UploadFile
-        fields = ('id', 'file', 'uploaded_on')
+        # fields = ('id', 'file', 'uploaded_on')
+        # fields = ('id', 'title',)
+        fields = ('__all__')
